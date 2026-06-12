@@ -12,7 +12,36 @@
     <style>
         @import url('https://googleapis.com');
         body { font-family: 'Inter', sans-serif; }
-        </style>
+        <style>
+    /* Floating WhatsApp Button Styling */
+    .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #25d366;
+        color: #ffffff;
+        border-radius: 50px;
+        text-align: center;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: 700;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Smooth Hover Animation */
+    .whatsapp-float:hover {
+        background-color: #128c7e;
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+        color: #ffffff;
+    }
+    </style>
         
 </head>
 <body class="bg-slate-900 text-slate-100 antialiased">
@@ -126,4 +155,10 @@
                 </div>
                 <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-5">
                     <h4 class="font-semibold text-base text-emerald-400 mb-2">Are withdrawals automatic to Mobile Money?</h4>
+                    <!-- Floating WhatsApp Button -->
+<a href="https://wa.me/256775148084?text=Hello%20coach%20am%20interested%20in%20EarnQash%20please%20link%20me%20up" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <span>Chat on WhatsApp</span>
+</a>
+
 
